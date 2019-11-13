@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="all">
+
+  <meta name="description" content="Leistungsstarkes Deployment-Framework für OpenStack, Ceph und erforderliche Dienste wie RabbitMQ Broker und MariaDB Galera Cluster." />
+
+  <meta name="twitter:description" content="Leistungsstarkes Deployment-Framework für OpenStack, Ceph und erforderliche Dienste wie RabbitMQ Broker und MariaDB Galera Cluster" />
+  <meta name="twitter:site" content="@betacloud" />
+  <meta name="twitter:title" content="Leistungsstarkes Deployment-Framework für OpenStack und Ceph" />
+
+  <meta property="og:site_name" content="Open Source Infrastructure & Service Manager" />
+  <meta property="og:title" content="Leistungsstarkes Deployment-Framework für OpenStack, Ceph und erforderliche Dienste wie RabbitMQ Broker und MariaDB Galera Cluster" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.osism.de" />
+
+  <link rel="canonical" href="https://www.osism.de/" />
+
+  <title>Leistungsstarkes Deployment-Framework für OpenStack und Ceph</title>
+
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous" />
+
+  <!-- <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png"> -->
+
+  <!-- <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Cloud Infrastruktur auf Basis von OpenStack und Ceph",
+    "description": "Bereitstellung und Betrieb von Cloud Infrastruktur (IaaS) auf Basis von OpenStack und Ceph. Spezialisierung auf hyperkonvergente Infrastruktur (HCI).",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Betacloud Solutions",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.betacloud-solutions.de/images/logo-betacloud-solutions.png"
+      }
+    }
+  }
+  </script> -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "url": "https://www.betacloud-solutions.de",
+    "name": "Betacloud Solutions",
+    "legalName": "Betacloud Solutions GmbH",
+    "email": "info@betacloud-solutions.de",
+    "telephone": "+49-711-21957006",
+    "logo": "https://www.betacloud-solutions.de/images/logo-betacloud-solutions.png",
+    "sameAs": [
+      "https://twitter.com/betacloud",
+      "https://www.instagram.com/betacloudsolutions/"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Teckstraße 62",
+      "addressLocality": "Stuttgart",
+      "addressRegion": "Baden-Württemberg",
+      "postalCode": "70190",
+      "addressCountry": "DE"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <nav class="navbar fixed-top">
+    <a href="/" class="navbar-left" title="www.osism.de">
+      <img src="images/logo-osism.png" class="logo-osism" alt="OSISM Logo" title="OSISM Logo" />
+    </a>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <a href="/" title="www.osism.de"><i class="fa fa-home"></i></a>
+        </div>
+        <div class="col">
+          <a href="mailto:info@osism.de" title="info@osism.de"><i class="fa fa-envelope"></i></a>
+        </div>
+        <div class="col">
+          <a href="tel:004971121957006" title="+49 711 21957006"><i class="fa fa-phone"></i></a>
+        </div>
+        <div class="col">
+          <a href="https://docs.osism.de" title="Dokumentation"><i class="fa fa-book"></i></a>
+        </div>
+        <div class="col">
+          <a href="https://twitter.com/betacloud" title="Twitter"><i class="fa fa-twitter"></i></a>
+        </div>
+        <div class="col">
+          <a href="https://www.instagram.com/betacloudsolutions/" title="Instagram"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="col">
+          <a href="https://github.com/osism/" title="GitHub"><i class="fa fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Deployment-Framework für OpenStack und Ceph</h1>
+        <p class="lead">
+          Der Open Source Infrastructure & Service Manager, kurz OSISM, ist ein leistungsstarkes
+          Deployment-Framework für OpenStack, Ceph und erforderliche Dienste wie ein RabbitMQ Broker und ein
+          MariaDB Galera Cluster.
+        </p>
+        <p class="lead">
+          Wir nutzen Ansible für die Automatisierung des Deployments. Docker setzen wir für die
+          Containerisierung aller Komponenten ein. Alle im OSISM eingesetzten Komponenten stehen frei zur Verfügung.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2><i class="fa fa-flask" aria-hidden="true"></i> TECHNOLOGIEN</h2>
+        <p class="lead">
+          OSISM baut auf den etablierten und weitverbreiteten Open Source Lösungen Ceph und OpenStack auf.
+        </p>
+        <p class="lead">
+          Um eine möglichst gro&szlig;e Herstellerunabhängigkeit zu erreichen nutzen wir für das Deployment die Open Source Projekte
+          <a href="https://github.omc/openstack/kolla-ansible">kolla-ansible</a> und <a href="https://github.com/ceph/ceph-ansible">ceph-ansible</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="margin-top: 30px;">
+    <div class="row">
+      <div class="col-lg-6 col-sm-6 mb-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-header bg-white"><img src="images/logo-ceph.png" class="logo-ceph" alt="Ceph Logo" title="Ceph Logo" /></div>
+          <div class="card-body">
+            <p class="card-text">
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-sm-6 mb-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-header bg-white"><img src="images/logo-openstack.png" class="logo-openstack" alt="OpenStack Logo" title="OpenStack Logo" /></div>
+          <div class="card-body">
+            <p class="card-text">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="container" style="margin-top: 30px;">
+    <div class="row">
+      <div class="col-12">
+        <h2><i class="fa fa-cubes" aria-hidden="true"></i> DIENSTE</h2>
+        <p class="lead">
+          OpenStack setzt sich aus einer Vielzahl von einzelnen Diensten
+          zusammen und benötigt einige zusätzliche Dienste wie einen RabbitMQ Broker
+          oder ein MariaDB Galera Cluster um zu funktionieren.
+        </p>
+        <p class="lead">
+          In der nachfolgenden Graphik der OpenStack Foundation (<small>CC-BY-SA 4.0</small>)
+          sind die einzelen Dienste von OpenStack dargestellt.
+        </p>
+        <p class="lead">
+          <img src="images/openstack-map-v20190601.svg" title="OpenStack service map" alt="OpenStack service map" />
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="margin-top: 30px;">
+    <div class="row">
+      <div class="col-12">
+        <p class="lead">
+          Vom OSISM werden nicht alle in OpenStack verfügbaren
+          Dienste angeboten. In der nachfolgenden Liste sind die dezeitig von uns
+          unterstützten Dienste aufgeführt. Weitere Dienste werden von Zeit zu
+          Zeit aufgenommen.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card-deck mb-3">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header bg-white">
+          <i class="fa fa-cogs" aria-hidden="true"></i> Infrastruktur
+        </div>
+        <div class="card-body">
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Adminer</li>
+            <li>Aptly</li>
+            <li>AWX</li>
+            <li>Cobbler</li>
+            <li>Cockpit</li>
+            <li>Elasticsearch</li>
+            <li>Etcd</li>
+            <li>Fluentd</li>
+            <li>Haproxy</li>
+            <li>Iscsid</li>
+            <li>Keepalived</li>
+            <li>Libvirt</li>
+            <li>Mariadb Galera Cluster</li>
+            <li>Mongodb</li>
+            <li>Multipathd</li>
+            <li>Open vSwitch</li>
+            <li>Phpmyadmin</li>
+            <li>Rabbitmq</li>
+            <li>Redis</li>
+            <li>Tgtd</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header bg-white">
+          <i class="fa fa-cloud" aria-hidden="true"></i> OpenStack
+        </div>
+        <div class="card-body">
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Aodh</li>
+            <li>Barbican</li>
+            <li>Ceilometer</li>
+            <li>Cinder</li>
+            <li>Designate</li>
+            <li>Glance</li>
+            <li>Gnocchi</li>
+            <li>Heat</li>
+            <li>Horizon</li>
+            <li>Keystone</li>
+            <li>Magnum</li>
+            <li>Manila</li>
+            <li>Mistral</li>
+            <li>Neutron</li>
+            <li>Nova</li>
+            <li>Octavia</li>
+            <li>Panko</li>
+            <li>Watcher</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header bg-white">
+          <i class="fa fa-bar-chart" aria-hidden="true"></i> Monitoring
+        </div>
+        <div class="card-body">
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Collectd</li>
+            <li>Grafana</li>
+            <li>Kibana</li>
+            <li>Netdata</li>
+            <li>Prometheus</li>
+            <li>Rally</li>
+            <li>Skydive</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container" style="margin-top: 30px;">
+    <div class="row">
+      <div class="col-12">
+        <p class="text-muted">
+          <i class="fa fa-envelope"></i> <a href="mailto:info@osism.de" title="info@osism.de">info@osism.de</a>
+          <i class="fa fa-phone"></i> <a href="tel:004971121957006" title="+49 711 21957006">+49 711 21957006</a>
+          <i class="fa fa-lock"></i> <a href="datenschutz.html" title="Datenschutz">Datenschutz</a>
+          <i class="fa fa-gavel"></i> <a href="impressum.html" title="Impressum">Impressum</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-muted">
+          Made with love <i class="fa fa-heart"></i> by Betacloud Solutions GmbH from Stuttgart.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

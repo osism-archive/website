@@ -1,0 +1,177 @@
+/* latin-ext */
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WdhyyTh89ZNpQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif !important;
+  padding-top: 130px;
+}
+
+.navbar {
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
+  background-color: white !important;
+  font-size: 16pt;
+}
+
+.logo-osism{
+  width: 20%;
+  height: auto;
+  padding: 7px;
+}
+
+.logo-betacloud-solutions {
+  width: auto;
+  height: 40px;
+  padding: 5px;
+}
+
+.logo-ceph {
+  width: auto;
+  height: 40px;
+  padding: 0px;
+}
+
+.logo-openstack {
+  width: auto;
+  height: 40px;
+  padding: 10px;
+}
+
+a:hover {
+  color: rgb(220,159,63) !important;
+}
+
+a {
+  color: rgb(160,41,42) !important;
+}
+
+.btn-primary:hover {
+  background-color: rgb(220,159,63) !important;
+  border-color: rgb(220,159,63) !important;
+  color: white !important;
+}
+
+.btn-primary {
+  background-color: rgb(160,41,42) !important;
+  border-color: rgb(160,41,42) !important;
+  color: white !important;
+}
+
+code {
+  color: rgba(121, 131, 140, 1.0) !important;
+}
+
+.footer a:hover {
+  color: rgb(220,159,63) !important;
+}
+
+.footer a {
+  color: rgb(160,41,42) !important;
+160/41/42
+}
+
+p.text-muted {
+  color: rgba(174, 179, 184, 1.0) !important;
+  font-size: 10pt;
+}
+
+h1 {
+  color: rgba(73, 83, 91, 1.0) !important;
+  font-weight: bold;
+  font-size: 20pt;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  color: rgba(73, 83, 91, 1.0) !important;
+  font-weight: bold;
+  font-size: 16pt;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+h3 {
+  color: rgba(73, 83, 91, 1.0) !important;
+  font-weight: bold;
+  font-size: 14pt;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+caption {
+  color: rgba(121, 131, 140, 1.0) !important;
+}
+
+/*p {
+  color: rgba(121, 131, 140, 1.0) !important;
+}*/
+
+.table-striped>tbody>tr>td {
+  color: rgba(121, 131, 140, 1.0) !important;
+}
+
+.thead-cool-1 {
+  background-color: rgba(73, 83, 91, 0.9);
+}
+
+.bg-cool-1 {
+  background-color: rgb(73, 83, 91);
+}
+
+.thead-cool-2 {
+  background-color: rgba(121, 131, 140, 1.0);
+}
+
+.thead-cool-3 {
+  background-color: rgba(174, 179, 184, 1.0);
+}
+
+.thead-cool-4 {
+  background-color: rgba(209, 214, 220, 0.4);
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: rgba(186, 206, 231, 0.1);
+}
+
+.table-striped>thead>tr>th {
+  color: rgba(209, 214, 220, 1.0) !important;
+}
+
+.table-striped>tbody>tr>th {
+  color: rgba(121, 131, 140, 1.0) !important;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+  background-color: rgba(209, 214, 220, 0.2) !important;
+}
+
+ul {
+  padding: 0;
+  margin-left: 1.75em;
+}
+
+.list-unstyled {
+  padding: 0;
+  margin-left: 0.75em;
+}

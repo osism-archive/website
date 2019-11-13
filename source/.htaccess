@@ -1,0 +1,41 @@
+FilterDeclare COMPRESS
+FilterProvider COMPRESS DEFLATE "%{Content_Type} -strmatch 'text/html*'"
+FilterProvider COMPRESS DEFLATE "%{Content_Type} -strmatch 'text/plain*'"
+FilterProvider COMPRESS DEFLATE "%{Content_Type} -strmatch 'text/xml*'"
+FilterProvider COMPRESS DEFLATE "%{Content_Type} -strmatch 'text/css*'"
+FilterProvider COMPRESS DEFLATE "%{Content_Type} -strmatch 'application/x-javascript*'"
+FilterProvider COMPRESS DEFLATE "%{Content_Type} -strmatch 'application/javascript*'"
+FilterProvider COMPRESS DEFLATE "%{Content_Type} -strmatch 'application/ecmascript*'"
+FilterProvider COMPRESS DEFLATE "%{Content_Type} -strmatch 'text/javascript*'"
+FilterProvider COMPRESS DEFLATE "%{Content_Type} -strmatch 'application/rss+xml*'"
+FilterProvider COMPRESS DEFLATE "%{Content_Type} -strmatch 'application/json*'"
+FilterChain COMPRESS
+FilterProtocol COMPRESS DEFLATE change=yes;byteranges=no
+
+RewriteEngine On
+
+# http -> https
+RewriteCond %{HTTPS} !on
+RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+
+# osism.de -> www.osism.de
+RewriteCond %{HTTP_HOST} !^www\.osism\.de [NC]
+RewriteRule (.*) http://www.osism.de/$1 [L]
+
+ExpiresActive on
+
+ExpiresDefault "access plus 5 minutes"
+
+ExpiresByType application/json "access plus 0 seconds"
+ExpiresByType application/xml "access plus 0 seconds"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/jpg "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresByType text/cache-manifest "access plus 0 seconds"
+ExpiresByType text/css "access plus 2 days"
+ExpiresByType text/htm "access plus 4 hours"
+ExpiresByType text/html "access plus 4 hours"
+ExpiresByType text/javascript "access plus 2 days"
+ExpiresByType text/xml "access plus 2 days"
