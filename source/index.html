@@ -112,14 +112,18 @@
         <h1>Deployment-Framework für OpenStack und Ceph</h1>
         <p class="lead">
           Der Open Source Infrastructure & Service Manager ist ein leistungsstarkes
-          Deployment-Framework für OpenStack, Ceph und erforderliche Dienste wie ein
-          RabbitMQ Broker und ein MariaDB Galera Cluster.
+          Deployment-Framework für OpenStack und Ceph sowie erforderliche Dienste wie einen
+          RabbitMQ Broker oder ein MariaDB Galera Cluster.
         </p>
         <p class="lead">
-          Mit dem OSISM verwalten wir unsere <a href="https://www.betacloud.de">Betacloud</a>.
-          Eine Public Cloud, welche kosteneffiziente Compute-, Storage- und Netzwerk-Ressourcen
+          OpenStack stellt eine erprobte und zuverlässige Basis für Plattformen wie
+          Gitlab CI, Kubernetes, Cloud Foundry oder OpenShift zur Verfügung.
+        </p>
+        <p class="lead">
+          Unsere <a href="https://www.betacloud.de">Betacloud</a>,
+          eine OpenStack Public Cloud, welche kosteneffiziente Compute-, Storage- und Netzwerk-Ressourcen
           zur Verwendung in CI/CD-Systemen, komplexen Entwicklungs- & Testlandschaften, virtuellen
-          Trainingsumgebungen uvm. bereitstellt.
+          Trainingsumgebungen uvm. bereitstellt, verwalten wir mit dem OSISM.
         </p>
       </div>
     </div>
@@ -130,19 +134,16 @@
       <div class="col-12">
         <h2><i class="fa fa-flask" aria-hidden="true"></i> TECHNOLOGIEN</h2>
         <p class="lead">
-          OSISM baut auf den etablierten und weitverbreiteten Open Source Lösungen Ceph und OpenStack auf.
+          Für die Automatisierung des Deployments von OpenStack und Ceph setzen wir auf
+          Ansible. Docker nutzen wir für die Containerisierung aller Komponenten.
         </p>
         <p class="lead">
-          Für die Automatisierung des Deployments setzen wir auf Ansible. Docker nutzen wir für die
-          Containerisierung aller Komponenten.
-        </p>
-        <p class="lead">
-          Alle im OSISM eingesetzten Komponenten stehen unter einer von der Free Software Foundation
+          Alle eingesetzten Komponenten stehen unter einer von der Free Software Foundation
           anerkannten Freien-Software-Lizenz zur Verfügung.
         </p>
         <p class="lead">
-          Um eine möglichst gro&szlig;e Herstellerunabhängigkeit zu erreichen verwenden wir für das
-          Deployment die Open Source Projekte <a href="https://github.omc/openstack/kolla-ansible">kolla-ansible</a>
+          Um eine möglichst gro&szlig;e Herstellerunabhängigkeit zu erreichen verwenden wir für die
+          Installation die Open Source Projekte <a href="https://github.omc/openstack/kolla-ansible">kolla-ansible</a>
           und <a href="https://github.com/ceph/ceph-ansible">ceph-ansible</a>.
         </p>
       </div>
@@ -154,13 +155,13 @@
       <div class="col-12">
         <h2><img src="images/logo-openstack.png" class="logo-openstack" alt="OpenStack Logo" title="OpenStack Logo" /></h2>
         <p class="lead">
-          OpenStack setzt sich aus einer Vielzahl von einzelnen Diensten
-          zusammen und benötigt einige zusätzliche Dienste wie einen RabbitMQ Broker
-          oder ein MariaDB Galera Cluster um zu funktionieren.
+          Diese Private Cloud Lösung setzt sich aus einer Vielzahl einzelner Diensten
+          zusammen und benötigt Dienste wie einen RabbitMQ Broker oder ein MariaDB Galera
+          Cluster um betrieben werden zu können.
         </p>
         <p class="lead">
           In der nachfolgenden Graphik der OpenStack Foundation (<small>CC-BY-SA 4.0</small>)
-          sind die einzelen Dienste von OpenStack dargestellt.
+          sind die einzelen Projekte von OpenStack dargestellt.
         </p>
         <p class="lead">
           <img src="images/openstack-map-v20190601.svg" title="OpenStack service map" alt="OpenStack service map" />
@@ -173,8 +174,8 @@
     <div class="row">
       <div class="col-12">
         <p class="lead">
-          Vom OSISM werden nicht alle in OpenStack verfügbaren
-          Dienste angeboten. In der nachfolgenden Liste sind die dezeitig von uns
+          Vom OSISM werden nicht alle verfügbaren OpenStack
+          Dienste unterstützt. In den folgenden Listen sind die
           unterstützten Dienste aufgeführt. Weitere Dienste werden von Zeit zu
           Zeit aufgenommen.
         </p>
@@ -203,7 +204,7 @@
             <li>Iscsid</li>
             <li>Keepalived</li>
             <li>Libvirt</li>
-            <li>Mariadb Galera Cluster</li>
+            <li>Mariadb Galera</li>
             <li>Multipathd</li>
             <li>Open vSwitch</li>
             <li>Phpmyadmin</li>
@@ -262,7 +263,7 @@
     <div class="row">
       <div class="col-12">
         <p class="lead">
-          OSISM ist für die OpenStack Versionen Rocky, Stein und Train verfügbar.
+          OpenStack steht in den Versionen Rocky, Stein und Train zur Verfügung.
         </p>
       </div>
     </div>
@@ -282,7 +283,7 @@
     <div class="row">
       <div class="col-12">
         <p class="lead">
-          OSISM ist für die Ceph Versionen Luminous und Nautilus verfügbar.
+          Ceph steht in den Versionen Luminous und Nautilus zur Verfügung.
         </p>
       </div>
     </div>
