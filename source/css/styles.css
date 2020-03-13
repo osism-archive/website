@@ -39,14 +39,22 @@ body {
 
 .logo-betacloud-solutions {
   width: auto;
-  height: 40px;
-  padding: 5px;
+  height: 60px;
+  padding: 0px;
 }
 
 .logo-ceph {
   width: auto;
   height: 100px;
   padding: 0px;
+}
+
+.logo-b1-systems {
+  float: left;
+  width: auto;
+  height: 70px;
+  padding: 0px;
+  padding-right: 10px;
 }
 
 .logo-openstack {
