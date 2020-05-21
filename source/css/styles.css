@@ -43,6 +43,18 @@ body {
   padding: 0px;
 }
 
+.screenshot-awx {
+  width: auto;
+  height: 600px;
+  padding: 0px;
+}
+
+.logo-ansible {
+  width: auto;
+  height: 100px;
+  padding: 0px;
+}
+
 .logo-ceph {
   width: auto;
   height: 100px;
