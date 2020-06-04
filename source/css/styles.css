@@ -31,6 +31,14 @@ body {
   font-size: 16pt;
 }
 
+.logo-gaia-x {
+  float: left;
+  width: 10%;
+  height: auto;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
 .logo-osism{
   width: 20%;
   height: auto;
