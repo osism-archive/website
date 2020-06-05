@@ -31,6 +31,13 @@ body {
   font-size: 16pt;
 }
 
+.logo-scs {
+  float: right;
+  width: 10%;
+  height: auto;
+  padding-left: 20px;
+}
+
 .logo-gaia-x {
   float: left;
   width: 10%;
