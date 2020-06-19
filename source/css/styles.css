@@ -214,30 +214,30 @@ ul {
 .asciicast {
 }
 
-blockquote{
+blockquote {
   font-size: 1.4em;
   margin: 50px auto;
   padding: 1.2em 30px 1.2em 75px;
-  border-left: 8px solid #50C3A5;
+  border-left: 8px solid rgba(174, 179, 184, 0.8);
   line-height: 1.6;
   position: relative;
   background: rgba(174, 179, 184, 0.1);
 }
 
-blockquote::before{
+blockquote::before {
   content: "\201C";
-  color: #50C3A5;
+  color: rgba(174, 179, 184, 0.8);
   font-size: 4em;
   position: absolute;
   left: 10px;
   top: -10px;
 }
 
-blockquote::after{
+blockquote::after {
   content: '';
 }
 
-blockquote span{
+blockquote span {
   display: block;
   color: #333333;
   font-style: normal;
