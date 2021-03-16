@@ -131,7 +131,7 @@ p.text-muted {
 h1 {
   color: rgba(73, 83, 91, 1.0) !important;
   font-weight: bold;
-  font-size: 20pt;
+  font-size: 16pt;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -139,7 +139,7 @@ h1 {
 h2 {
   color: rgba(73, 83, 91, 1.0) !important;
   font-weight: bold;
-  font-size: 16pt;
+  font-size: 14pt;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -147,7 +147,7 @@ h2 {
 h3 {
   color: rgba(73, 83, 91, 1.0) !important;
   font-weight: bold;
-  font-size: 14pt;
+  font-size: 12pt;
   padding-top: 10px;
   padding-bottom: 10px;
 }
