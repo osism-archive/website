@@ -6,17 +6,17 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <url>
-    <loc>https://www.osism.de/</loc>
+    <loc>https://www.osism.tech/</loc>
     <lastmod>2020-03-07T20:00:00+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://www.osism.de/datenschutz.html</loc>
+    <loc>https://www.osism.tech/datenschutz.html</loc>
     <lastmod>2020-03-07T20:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.osism.de/impressum.html</loc>
+    <loc>https://www.osism.tech/impressum.html</loc>
     <lastmod>2020-03-07T20:20:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
