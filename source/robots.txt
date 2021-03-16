@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.osism.de/sitemap.xml
+Sitemap: https://www.osism.tech/sitemap.xml

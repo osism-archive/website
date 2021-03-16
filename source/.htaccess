@@ -18,9 +18,11 @@ RewriteEngine On
 RewriteCond %{HTTPS} !on
 RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
 
-# osism.de -> www.osism.de
+# osism.de/io/tech -> www.osism.tech
 RewriteCond %{HTTP_HOST} !^www\.osism\.de [NC]
-RewriteRule (.*) http://www.osism.de/$1 [L]
+RewriteCond %{HTTP_HOST} !^www\.osism\.io [NC]
+RewriteCond %{HTTP_HOST} !^www\.osism\.tech [NC]
+RewriteRule (.*) http://www.osism.tech/$1 [L]
 
 ExpiresActive on
 
