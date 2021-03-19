@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
 set -x
 
-mkdir -p build/images build/css
+mkdir -p build/images build/css build/files
 
 cp source/*.html build
 cp source/*.xml build
 cp source/.htaccess build
-cp source/robots.txt build
-cp source/images/*.ico build
 cp source/css/* build/css
+cp source/files/* build/files
+cp source/images/*.ico build
 cp source/images/*.png build/images
 cp source/images/*.svg build/images
+cp source/robots.txt build
 
 # optimize png files
 
