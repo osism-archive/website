@@ -32,10 +32,10 @@ body {
 }
 
 .logo-scs {
-  float: right;
+  float: left;
   width: 10%;
   height: auto;
-  padding-left: 20px;
+  padding: 5px;
 }
 
 .logo-gaia-x {
@@ -46,10 +46,17 @@ body {
   padding-bottom: 20px;
 }
 
-.logo-osism{
+.logo-osism {
   width: 20%;
   height: auto;
   padding: 7px;
+}
+
+.logo-osism-ee {
+  float: left;
+  width: auto;
+  height: 80px;
+  padding: 5px;
 }
 
 .logo-betacloud-solutions {
@@ -250,4 +257,8 @@ blockquote span {
   font-style: normal;
   margin-top: 1em;
   font-size: 0.3em;
+}
+
+p.lead {
+  text-align: justify;
 }
