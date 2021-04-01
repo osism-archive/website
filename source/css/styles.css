@@ -90,13 +90,6 @@ body {
   padding: 0px;
 }
 
-.logo-b1-systems {
-  float: left;
-  width: auto;
-  height: 70px;
-  padding: 0px;
-  padding-right: 10px;
-}
 
 .logo-openstack {
   width: auto;
@@ -261,4 +254,43 @@ blockquote span {
 
 p.lead {
   text-align: justify;
+}
+
+.logo-seeburger {
+  width: 150px;
+  height: auto;
+}
+
+.logo-audi {
+  width: 150px;
+  height: auto;
+}
+
+.logo-plusserver {
+  width: 150px;
+  height: auto;
+  margin-top: 15px;
+}
+
+.logo-b1-systems {
+  height: 60px;
+  width: auto;
+}
+
+.logo-wavecon {
+  width: 150px;
+  height: auto;
+  background: black;
+  padding: 15px;
+}
+
+.block-center-point {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.small-centered-title {
+  text-align: center;
+  font-size: 8pt;
 }
