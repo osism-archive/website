@@ -280,7 +280,13 @@ p.lead {
 .logo-wavecon {
   width: 150px;
   height: auto;
-  padding: 15px;
+  margin: 15px;
+}
+
+.logo-noris-network {
+  width: 150px;
+  height: auto;
+  margin: 15px;
 }
 
 .block-center-point {
