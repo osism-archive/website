@@ -52,11 +52,14 @@ td+td, th+th {
 td.default {
   display:table-cell;
 }
-.bg-purple {
-  border-top:3px solid #A32362;
+.bg-community {
+  border-top:3px solid #000000;
 }
-.bg-blue {
-  border-top:3px solid #0097CF;
+.bg-advanced {
+  border-top:3px solid #000000;
+}
+.bg-enterprise {
+  border-top:3px solid #000000;
 }
 .sep {
   background:#F5F5F5;
