@@ -1,0 +1,36 @@
+---
+name: Push website
+
+"on":
+  push:
+    paths:
+      - 'source/**'
+      - '.github/workflows/push-website.yml'
+  pull_request:
+    paths:
+      - 'source/**'
+      - '.github/workflows/push-website.yml'
+
+jobs:
+  default:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - run: npm install html-minifier clean-css clean-css-cli
+      - run: sudo apt-get -y install imagemagick
+      - run: scripts/build.sh
+      - uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          local-dir: build/
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          security: strict
+          server-dir: /
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+        if: github.ref == 'refs/heads/master'
